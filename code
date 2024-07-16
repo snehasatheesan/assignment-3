@@ -1,0 +1,120 @@
+1.Take three numbers from the user and print the greatest number.
+
+import java.util.Scanner;
+
+public class prob1 {
+    public static void main(String[] args) {
+Scanner in = new Scanner(System.in);
+     int a= in.nextInt();
+        int b=in.nextInt();
+      int c=in.nextInt();
+         int max=a;
+
+        if(b>max){
+          max=b;
+        }
+if
+    (c>max){
+        max=c;
+    }
+ else{
+            max=a;
+ }
+        System.out.println(max);
+        in.close();
+}
+}
+___________________________________________________________________________________________________________________________________________________________________________
+
+2. Create a program that takes a student's score as input and outputs their corresponding grade.
+
+import java.util.Scanner;
+
+public class pro {
+
+	public static void main(String[] args) {
+		System.out.println("enter the student's score");
+		Scanner v =new Scanner(System.in);
+		int n =v.nextInt();
+		
+       char grade;
+       if(n>90) {
+    	   System.out.println("the grade is A");
+       }
+       else if(n>=80) {
+    	   System.out.println("the grade is B");
+       }
+       else if(n >= 70) {
+    	   System.out.println("the grade is c");
+    	   
+       }
+       else if(n>=60) {
+    	   System.out.println("the grade is D");
+       }
+       else {
+    	   System.out.println("the student has failed the exam ");
+       }
+      
+       v.close();
+       }
+	
+}
+
+______________________________________________________________________________________________________________________________________________________________________________________
+
+3. Write a program to print multiplication table of a given number in a neat format.
+
+import java.util.Scanner;
+
+public class multi {
+public static void main(String []args) {
+	System.out.println("enter the no.");
+	Scanner b=new Scanner(System.in);
+	int v = b.nextInt();
+	for(int i=1; i<=10;i++) {
+		System.out.println(v+"x"+i+"="+(v*i));
+	}
+}
+}
+__________________________________________________________________________________________________________________________________________________________________________________________
+5. Write a program to print prime numbers between 1 to 30.
+
+public class primeM {
+	  public static void main(String[] args) {
+	    int a = 30;  
+	    int count;  
+   for (int i = 1; i <= a; i++) {
+	      count = 0;  
+   for (int j = 2; j <= i / 2; j++) {
+	        if (i % j == 0) {
+	          count++;  
+	          break;  
+	        }
+	      }
+          if (count == 0) {
+	        System.out.println(i);  
+	      }
+	    }
+	  }
+	}
+___________________________________________________________________________________________________________________________________________________________________________________________
+
+6. Write a program to find the sum of even numbers only in a given array. Use continue.
+
+public class sum {
+
+		    public static void main(String[] args) {
+		        int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+		        int sum = 0;
+                 for (int i = 0; i < array.length; i++) {
+		            if (array[i] % 2 != 0) {
+		                continue;
+		            }
+		            sum += array[i];
+		        }
+		        System.out.println("The sum of even numbers in the array is: " + sum);
+		    }
+		}
+
+
+
